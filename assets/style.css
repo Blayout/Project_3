@@ -173,7 +173,7 @@ nav .logo {
     opacity: 1;
     color: transparent;
     background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
+    background-clip: text;
     border: 0;
 
 }
