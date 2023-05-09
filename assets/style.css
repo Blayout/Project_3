@@ -381,7 +381,7 @@ footer {
 footer ul {
     flex-direction: row;
     display: flex;
-    gap: 30px;
+    gap: 29px;
 
 }
 
