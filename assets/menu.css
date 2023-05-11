@@ -193,3 +193,28 @@ footer .logo {
 
 
     
+
+
+
+.test{
+    width: 30px;
+    margin: -10px;
+    background-color: #50e2ac;
+    height: 128%;
+    border-radius: 0px 10px 10px 1px;
+}
+
+.box:hover{
+
+animation: Test 1s ease-in-out forwards;
+
+}
+
+@keyframes Test{
+    0%{
+        translateX: -100px;
+    }
+    100%{
+        translateX: -100px;
+    }
+}
