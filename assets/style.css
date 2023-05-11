@@ -137,15 +137,16 @@ a {
     box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.14);
     height: 70px;
     align-items: center;
+    position: relative;
 }
 
 .number {
-    margin-left: -349px;
+    left: -10px;
     position: absolute;
 }
 
 .item i {
-    margin-left: -250px;
+    left: 49px;
     position: absolute;
 }
 
@@ -159,10 +160,10 @@ a {
 .container-restaurant{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     background-color: #EAEAEA;
+    flex-direction: column;
     margin-top: 50Px;
+    align-items: center;
 
 }
 .restaurant {
@@ -175,9 +176,6 @@ a {
     margin-top: 50px;
 }
 
-.restaurant h1 {
-    margin-right: 208px;
-}
 
 .restaurant-item {
     display: flex;
@@ -189,6 +187,10 @@ a {
     position: relative;
 
 
+}
+
+.restaurant a {
+    width: 90%;
 }
 
 .text-item {
@@ -255,6 +257,7 @@ span {
 }
 
 
+
 /***************footer**************/
 
 footer {
@@ -316,9 +319,6 @@ footer .logo {
     width: 25%;
 }
 
-.number {
-    margin-left: -360px;
-}
 
 /*************restaurant*************/
 
@@ -347,8 +347,12 @@ footer .logo {
 
 
 .restaurant-item {
-    width: 40%;
+    width: 100%;
    
+}
+
+.restaurant a {
+    width: 40%;
 }
 
 span {
