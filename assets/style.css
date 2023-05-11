@@ -153,41 +153,6 @@ a {
     color: var(--primary);
 }
 
-.custom-heart {
-    position: absolute;
-    margin-left: 280px;
-    font-size: 25px;
-    margin-top: 11px;
-
-}
-
-.custom-heart-full {
-    position: absolute;
-    margin-left: 280px;
-    font-size: 25px;
-    margin-top: 11px;
-    opacity: 0;
-}
-
-.custom-heart-full {
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 0.1s;
-}
-.custom-heart-full:active {
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
-    border: 0;
-
-}
-
-
-
- 
-
-
 
 /******************restaurant*****************/
 
@@ -221,6 +186,8 @@ a {
     width: 100%;
     background-color: white;
     border-radius: 25px;
+    position: relative;
+
 
 }
 
@@ -229,6 +196,7 @@ a {
     flex-direction: column;
     padding: 20px;
     line-height: 25px;
+    position: relative;
     
 
 }
@@ -238,12 +206,12 @@ span {
     width: auto;
     height: auto;
     background-color: #97dfcc;
-    margin-left: 237px;
-    margin-top: 12px;
     width: 80px;
     padding: 1%;
     text-align: center;
     color: #008766;
+    right: 21px;
+    top: 21px;
 }
 
 
@@ -254,6 +222,36 @@ span {
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+}
+
+.custom-heart {
+    position: absolute;
+    font-size: 25px;
+    right:20px;
+    bottom: 35px;
+
+}
+
+.custom-heart-full {
+    position: absolute;
+    font-size: 25px;
+    opacity: 0;
+    right:20px;
+    bottom: 35px;
+}
+
+.custom-heart-full {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+.custom-heart-full:active {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+
 }
 
 
@@ -354,7 +352,6 @@ footer .logo {
 }
 
 span {
-    margin-left: 461px;
     width: 80px;
     padding: 10px;
 }
