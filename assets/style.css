@@ -140,6 +140,7 @@ a {
     box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.14);
     height: 70px;
     align-items: center;
+    gap: 10px;
     position: relative;
 }
 
@@ -148,10 +149,6 @@ a {
     position: absolute;
 }
 
-.item i {
-    left: 12%;
-    position: absolute;
-}
 
 .item i:hover {
     color: var(--primary);
@@ -319,7 +316,7 @@ footer .logo {
     
 
     .item {
-        width: 39%;
+        width: 39% !important;
     }
     .container-restaurant {
         margin-top: 0;
@@ -380,10 +377,6 @@ footer .logo {
     }
     .functioning h1 {
         position: absolute;
-    }
-
-    .item {
-        width: 33%;
     }
 
 }
