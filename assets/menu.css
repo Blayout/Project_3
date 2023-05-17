@@ -70,12 +70,13 @@ nav i {
 .taste-heart {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
     margin-top: -57px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    gap: 20px;
 
 }
 
@@ -89,13 +90,40 @@ nav i {
 
 /*******************bannerbackgroundimag***********/
 
-.banner {
+.banner-palettedugout {
     background-image: url(../assets/images/restaurants/lapalettedugout.jpg);
-    height: 275px;
+    height: 500px;
     width: auto;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
 }
+.banner-alafrancaise {
+    background-image: url(../assets/images/restaurants/alafrancaise.jpg);
+    height: 275px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+
+}
+.banner-lanoteenchante{
+    background-image: url(../assets/images/restaurants/lapalettedugout.jpg);
+    height: 350px;
+    width: auto;
+    background-size: cover;
+    background-position: center;    
+
+}
+.banner-delicedessens {
+    background-image: url(../assets/images/restaurants/ledelicedessens.jpg);
+    height: 275px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
 .page-menu {
     background-color: #EAEAEA;
 }
@@ -115,6 +143,8 @@ nav i {
     flex-direction: column;
     justify-content: flex-start;
     line-height: 30px;
+    align-self: flex-start;
+    margin-left: 7%;
 }
 
 
@@ -123,6 +153,7 @@ span {
     height: 3px;
     width: 40px;
     margin-right: 292px;
+
 }
 .box-item {
     height: 72px;
@@ -136,7 +167,7 @@ span {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 10px;
+    padding: 13px;
 }
 
 .box-info {
@@ -217,4 +248,79 @@ animation: Test 1s ease-in-out forwards;
     100%{
         translateX: -100px;
     }
+}
+
+@media (min-width:768px) {
+
+    .taste-heart {
+        background-color: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .page-menu {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner-palettedugout {
+        margin-bottom: -41px;
+    }
+    .banner-alafrancaise {
+        margin-bottom: -41px;
+    }
+    .banner-lanoteenchante {
+        margin-bottom: -41px;
+    }
+    .banner-delicedessens {
+        margin-bottom: -41px;
+    }
+
+    
+
+    .taste-heart {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+    }
+
+    .page-menu {
+        background-color: #f4f4f4;
+    }
+
+    .page-menu .box{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    footer {
+        height: 125px;
+        padding: 0;
+    }
+    .text-footer {
+        flex-direction: row;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        height: 100%;
+        padding: 3%;
+    
+    }
+    
+    footer ul {
+        flex-direction: row;
+        display: flex;
+        gap: 29px;
+    
+    }
+    
+    footer .logo {
+        margin: 0;
+        order: 5;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width:1224px){
+
 }
