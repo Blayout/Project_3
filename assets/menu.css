@@ -100,15 +100,15 @@ nav i {
 }
 .banner-alafrancaise {
     background-image: url(../assets/images/restaurants/alafrancaise.jpg);
-    height: 275px;
+    height: 500px;
     width: auto;
     background-size: cover;
     background-position: center;
 
 }
 .banner-lanoteenchante{
-    background-image: url(../assets/images/restaurants/lapalettedugout.jpg);
-    height: 350px;
+    background-image: url(../assets/images/restaurants/lanoteenchantée.jpg);
+    height: 500px;
     width: auto;
     background-size: cover;
     background-position: center;    
@@ -116,7 +116,7 @@ nav i {
 }
 .banner-delicedessens {
     background-image: url(../assets/images/restaurants/ledelicedessens.jpg);
-    height: 275px;
+    height: 500px;
     width: auto;
     background-size: cover;
     background-position: center;
@@ -292,7 +292,7 @@ animation: Test 1s ease-in-out forwards;
         width: 80%;
         margin: 0 auto;
     }
-    
+
     footer {
         height: 125px;
         padding: 0;
