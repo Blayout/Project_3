@@ -99,15 +99,19 @@ a {
     padding: 0px 10px;
 }
 
-.main-banner button {
+.main-banner .button {
     width: auto;
     border-radius: 30px;
-    height: 60px;
+    height: 23px;
     padding: 16px;
     margin-top: 25px;
     background-image: linear-gradient(to right bottom, #e270da, #d168db, #be61db, #aa5bdc, #9356dc);
+    box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.14);
     border: none;
     color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 16px;
     
     
 }
