@@ -110,10 +110,14 @@ a {
     border: none;
     color: white;
     font-weight: bolder;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
     font-size: 16px;
-    
-    
+  
+}
+
+ .button:hover {
+    filter: brightness(1.1);
+    box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.3);
 }
 
 /******************functioning*************/
@@ -290,7 +294,12 @@ footer li {
     gap: 20px;
     list-style-type: none;
     line-height: 25px;
+    
 
+}
+
+footer .mail {
+    color: white;
 }
 
 footer ul {
@@ -351,6 +360,7 @@ footer .logo {
         margin: 0;
         position: relative;
         margin-top: 60px;
+        margin-bottom: 50px;
     }
     
     .restaurant h2 {
@@ -452,6 +462,7 @@ footer .logo {
     margin: 0;
     position: relative;
     margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 .restaurant h2 {
@@ -459,6 +470,7 @@ footer .logo {
     left: 10%;
     margin-left: 0;
     position: absolute;
+    margin-top: 10px;
 }
 
 
@@ -522,3 +534,7 @@ footer .logo {
         margin: 0 auto;
     }
 }
+
+
+
+@import url(menu.css);
