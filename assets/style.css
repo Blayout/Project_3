@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 p {
@@ -122,7 +122,14 @@ a {
     margin-top: 30px;
 }
 
-.functioning h1 {
+.item-block {
+    width: 95%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.functioning h2 {
     align-self: flex-start;
     margin-left: 5%;
 }
@@ -176,7 +183,7 @@ a {
     margin-top: 50px;
 }
 
-.restaurant h1 {
+.restaurant h2 {
     align-self: flex-start;
     margin-left: 5%;
 }
@@ -187,7 +194,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 251px;
-    width: 100%;
+    width: 90%;
     background-color: white;
     border-radius: 25px;
     position: relative;
@@ -195,8 +202,8 @@ a {
 
 }
 
-.restaurant a {
-    width: 90%;
+.restaurant .href {
+    width: 100%;
 }
 
 .text-item {
@@ -208,6 +215,7 @@ a {
     
 
 }
+
 
 span {
     position: absolute;
@@ -308,7 +316,13 @@ footer .logo {
         margin-bottom: 30px;
 
 }
-    .functioning h1 {
+
+    .item-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .functioning h2 {
         position: absolute;
         left: 5.5%;
         top: 399px;
@@ -335,7 +349,7 @@ footer .logo {
         margin-top: 60px;
     }
     
-    .restaurant h1 {
+    .restaurant h2 {
         top: -57px;
         left: 10%;
         margin-left: 0;
@@ -344,12 +358,12 @@ footer .logo {
     
     
     .restaurant-item {
-        width: 100%;
+        width: 40%;
        
     }
     
-    .restaurant a {
-        width: 40%;
+    .restaurant .href {
+        width: 100%;
     }
     
     span {
@@ -375,7 +389,7 @@ footer .logo {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .functioning h1 {
+    .functioning h2 {
         position: absolute;
     }
 
@@ -389,7 +403,7 @@ footer .logo {
 
 
 .functioning {
-        flex-direction: row;   
+        flex-direction: column;   
         height: 250px;
         align-items: center; 
         width: 100%;  
@@ -398,15 +412,19 @@ footer .logo {
 
 }
 
-.functioning h1 {
-    position: absolute;
+.functioning h2 {
     margin: 0;
-    top: 405px;
-    left: 10%;
+    margin-left: 9%;
 }
-        
+.item-block {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    gap: 40px;
 
+} 
 
 .item {
     width: 25%;
@@ -432,8 +450,8 @@ footer .logo {
     margin-top: 60px;
 }
 
-.restaurant h1 {
-    top: -57px;
+.restaurant h2 {
+    top: -40px;
     left: 10%;
     margin-left: 0;
     position: absolute;
@@ -441,12 +459,12 @@ footer .logo {
 
 
 .restaurant-item {
-    width: 100%;
+    width: 40%;
    
 }
 
-.restaurant a {
-    width: 40%;
+.restaurant .href {
+    width: 100%;
 }
 
 span {
@@ -493,3 +511,10 @@ footer .logo {
 
 }
 
+
+@media (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
