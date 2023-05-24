@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 p {
@@ -155,7 +155,7 @@ span {
 }
 
 .box-info p {
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 .effect .fa-circle-check {
@@ -390,6 +390,10 @@ animation: Test 1s ease-in-out forwards;
         margin: 0 auto;
     }
 
+    .box-info h3 {
+        font-size: 1em;
+    }
+
     .effect {
         width: 60px;
     }
@@ -400,7 +404,7 @@ animation: Test 1s ease-in-out forwards;
 }
 
 .box-item:active .price {
-    transform: translateX(-50px); /* Décalage vers la gauche */
+    transform: translateX(-60px); /* Décalage vers la gauche */
 }
 
 .box-item:not(:active) .effect {
@@ -462,7 +466,7 @@ animation: Test 1s ease-in-out forwards;
     }
     
     .box-item:hover .price {
-        transform: translateX(-50px); /* Décalage vers la gauche */
+        transform: translateX(-60px); /* Décalage vers la gauche */
     }
     
     .box-item:not(:hover) .effect {
@@ -474,6 +478,10 @@ animation: Test 1s ease-in-out forwards;
         animation-name: "green_effect";
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
+    }
+
+    .box-info h3 {
+        font-size: 1.3em;
     }
 }
 
