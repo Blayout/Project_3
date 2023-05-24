@@ -19,6 +19,10 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 1em;
+}
+
 p {
     font-size: 16px;
 }
@@ -107,6 +111,7 @@ nav i {
     gap: 15px;
 }
 
+
 .span {
     display: flex;
     flex-direction: column;
@@ -136,15 +141,139 @@ span {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 13px;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 .box-info {
+    padding: 7px 7px 7px 20px;
+    line-height: 23px;
     display: flex;
     flex-direction: column;
     margin-right: 10px;
 }
 
+.box-info p {
+    font-size: 0.8em;
+}
+
+.effect .fa-circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+.effect {
+    background-color: #50e2ac;
+    width: 50px;
+    height: 72px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateX(100%); /* Initialement hors de la vue */
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.5s ease; /* Transition pour la propriété transform */
+}
+
+.price {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    transition: transform 0.5s ease; /* Transition pour la propriété transform */
+    font-weight: bolder;
+}
+
+
+
+/****************animation*************/
+.box-item:active .effect {
+    transform: translateX(0);
+}
+
+.box-item:active .price {
+    transform: translateX(-50px); /* Décalage vers la gauche */
+}
+
+.box-item:not(:active) .effect {
+    transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
+    transform: translateX(100%); /* Retour à la position initiale */
+}
+
+@keyframes green_effect {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.box-item:active .effect {
+    animation-name: "green_effect";
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  .page-menu .box-item {
+    opacity: 0; 
+  }
+
+  .page-menu .box-item:nth-child(1) {
+    animation: fade-in 1.2s ease-in-out 0.5s forwards;
+  }
+  
+  .page-menu .box-item:nth-child(2) {
+    animation: fade-in 1.2s ease-in-out 0.7s forwards;
+  }
+  
+  .page-menu .box-item:nth-child(3) {
+    animation: fade-in 1.2s ease-in-out 0.9s forwards;
+  }
+
+  .page-menu .box-item:nth-child(4) {
+    animation: fade-in 1.2s ease-in-out 1.5s forwards;
+  }
+  .page-menu .box-item:nth-child(5) {
+    animation: fade-in 1.2s ease-in-out 1.7s forwards;
+  }
+  .page-menu .box-item:nth-child(6) {
+    animation: fade-in 1.2s ease-in-out 1.9s forwards;
+  }
+  .page-menu .box-item:nth-child(7) {
+    animation: fade-in 1.2s ease-in-out 2.3s forwards;
+  }
+  .page-menu .box-item:nth-child(8) {
+    animation: fade-in 1.2s ease-in-out 2.5s forwards;
+  }
+  .page-menu .box-item:nth-child(9) {
+    animation: fade-in 1.2s ease-in-out 2.7s forwards;
+  }
+  .page-menu .box-item:nth-child(10) {
+    animation: fade-in 1.2s ease-in-out 3.1s forwards;
+  }
+  .page-menu .box-item:nth-child(11) {
+    animation: fade-in 1.2s ease-in-out 3.3s forwards;
+  }
+  .page-menu .box-item:nth-child(12) {
+    animation: fade-in 1.2s ease-in-out 3.5s forwards;
+    -webkit-animation: fade-in 1.2s ease-in-out 3.5s forwards;
+}
 
 
 .button {
@@ -202,11 +331,6 @@ footer .logo {
 }
 
 
-
-    
-
-
-
 .test{
     width: 30px;
     margin: -10px;
@@ -224,6 +348,7 @@ animation: Test 1s ease-in-out forwards;
 
 @media (min-width:768px) {
 
+    
     .taste-heart {
         background-color: white;
         border-top-left-radius: 30px;
@@ -265,6 +390,44 @@ animation: Test 1s ease-in-out forwards;
         margin: 0 auto;
     }
 
+    .effect {
+        width: 60px;
+    }
+
+
+    .box-item:active .effect {
+    transform: translateX(0);
+}
+
+.box-item:active .price {
+    transform: translateX(-50px); /* Décalage vers la gauche */
+}
+
+.box-item:not(:active) .effect {
+    transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
+    transform: translateX(100%); /* Retour à la position initiale */
+}
+
+@keyframes green_effect {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.box-item:active .effect {
+    animation-name: "green_effect";
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+    .box-info {
+        line-height: 26px;
+    }
+    .box-info p {
+        font-size: 1em;
+    }
+
     footer {
         height: 125px;
         padding: 0;
@@ -294,62 +457,26 @@ animation: Test 1s ease-in-out forwards;
 }
 
 @media (min-width:1224px){
-
+    .box-item:hover .effect {
+        transform: translateX(0);
+    }
+    
+    .box-item:hover .price {
+        transform: translateX(-50px); /* Décalage vers la gauche */
+    }
+    
+    .box-item:not(:hover) .effect {
+        transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
+        transform: translateX(100%); /* Retour à la position initiale */
+    }
+    
+    .box-item:hover .effect {
+        animation-name: "green_effect";
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
 }
 
 
-@keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
- 
-  .page-menu .box-item {
-    opacity: 0; 
-  }
 
-  .page-menu .box-item:nth-child(1) {
-    animation: fade-in 1.2s ease-in-out 0.5 forwards;
-  }
-  
-  .page-menu .box-item:nth-child(2) {
-    animation: fade-in 1.2s ease-in-out 0.7s forwards;
-  }
-  
-  .page-menu .box-item:nth-child(3) {
-    animation: fade-in 1.2s ease-in-out 0.9s forwards;
-  }
 
-  .page-menu .box-item:nth-child(4) {
-    animation: fade-in 1.2s ease-in-out 1.5s forwards;
-  }
-  .page-menu .box-item:nth-child(5) {
-    animation: fade-in 1.2s ease-in-out 1.7s forwards;
-  }
-  .page-menu .box-item:nth-child(6) {
-    animation: fade-in 1.2s ease-in-out 1.9s forwards;
-  }
-  .page-menu .box-item:nth-child(7) {
-    animation: fade-in 1.2s ease-in-out 2.3s forwards;
-  }
-  .page-menu .box-item:nth-child(8) {
-    animation: fade-in 1.2s ease-in-out 2.5s forwards;
-  }
-  .page-menu .box-item:nth-child(9) {
-    animation: fade-in 1.2s ease-in-out 2.7s forwards;
-  }
-  .page-menu .box-item:nth-child(10) {
-    animation: fade-in 1.2s ease-in-out 3.1s forwards;
-  }
-  .page-menu .box-item:nth-child(11) {
-    animation: fade-in 1.2s ease-in-out 3.3s forwards;
-  }
-  .page-menu .box-item:nth-child(12) {
-    animation: fade-in 1.2s ease-in-out 3.5s forwards;
-    -webkit-animation: fade-in 1.2s ease-in-out 3.5s forwards;
-}

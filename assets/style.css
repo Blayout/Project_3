@@ -337,7 +337,7 @@ footer .logo {
     }
     .functioning h2 {
         position: absolute;
-        left: 5.5%;
+        left: 2%;
         top: 399px;
 }
     
@@ -368,6 +368,7 @@ footer .logo {
         left: 10%;
         margin-left: 0;
         position: absolute;
+        margin-top: 20px;
     }
     
     
@@ -435,7 +436,7 @@ footer .logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     gap: 40px;
 
 } 
@@ -467,10 +468,10 @@ footer .logo {
 
 .restaurant h2 {
     top: -40px;
-    left: 10%;
+    left: 9%;
     margin-left: 0;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
@@ -527,14 +528,4 @@ footer .logo {
 
 }
 
-
-@media (min-width: 1440px) {
-    body {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-}
-
-
-
-@import url(menu.css);
+@import url(assets/images/menu.css);
