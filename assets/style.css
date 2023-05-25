@@ -63,7 +63,7 @@ a {
 
 .location-header {
     background-color:#EAEAEA;
-    box-shadow: inset 0px 17px 15px -17px #9c9c9c;
+    box-shadow: inset 0px 17px 15px -17px #dbd7d7;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -184,7 +184,6 @@ a {
 .restaurant {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     width: 100%;
     align-items: center;
     margin-bottom: 100px;
@@ -206,6 +205,7 @@ a {
     background-color: white;
     border-radius: 25px;
     position: relative;
+    margin-top: 4%;
 
 
 }
@@ -257,26 +257,79 @@ span {
 }
 
 .custom-heart-full {
+    display: none;
     position: absolute;
     font-size: 25px;
     opacity: 0;
     right:20px;
     bottom: 35px;
+   
 }
+#like1:target{
+    display: block;
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+    position: absolute;
+    font-size: 25px;
+    right:20px;
+    bottom: 35px;}
+
+    #like2:target{
+        display: block;
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient(#b472e4, #e47cde);
+        -webkit-background-clip: text;
+        border: 0;
+        position: absolute;
+        font-size: 25px;
+        right:20px;
+        bottom: 35px;}
+    
+    #like3:target{
+            display: block;
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(#b472e4, #e47cde);
+            -webkit-background-clip: text;
+            border: 0;
+            position: absolute;
+            font-size: 25px;
+            right:20px;
+            bottom: 35px;}
+    
+    #like4:target{
+            display: block;
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(#b472e4, #e47cde);
+            -webkit-background-clip: text;
+            border: 0;
+            position: absolute;
+            font-size: 25px;
+            right:20px;
+            bottom: 35px;}
+    
+
 
 .custom-heart-full {
     opacity: 0;
     transition-property: all;
     transition-duration: 0.1s;
 }
-.custom-heart-full:active {
+
+
+/*.custom-heart-full:active {
     opacity: 1;
     color: transparent;
     background-image: linear-gradient(#b472e4, #e47cde);
     -webkit-background-clip: text;
-    border: 0;
+    border: 0;}
+*/
 
-}
 
 
 
@@ -347,7 +400,7 @@ footer .logo {
     }
     .container-restaurant {
         margin-top: 0;
-        height: 646px;
+        height: 700px;
         
     }
     
@@ -364,16 +417,16 @@ footer .logo {
     }
     
     .restaurant h2 {
-        top: -57px;
+        top: -27px;
         left: 10%;
         margin-left: 0;
         position: absolute;
-        margin-top: 20px;
     }
     
     
     .restaurant-item {
         width: 40%;
+        margin: 2% 3%;
        
     }
     
@@ -450,7 +503,7 @@ footer .logo {
 
 .container-restaurant {
     margin-top: 0;
-    height: 646px;
+    height: 700px;
     
 }
 
@@ -477,6 +530,7 @@ footer .logo {
 
 .restaurant-item {
     width: 40%;
+    margin: 2% 3%;
    
 }
 

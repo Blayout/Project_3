@@ -75,17 +75,37 @@ nav i {
     margin-top: -57px !important;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    gap: 20px;
-
+    position: relative;
+    width: auto;
+    
 }
 
 .taste-heart h1 {
-    margin: 30px 0px;
+    margin: 30px 10px;
 }
 
 .taste-heart i {
     font-size: 25px;
 }
+
+.menu-heart-custom-empty {
+    position: relative;
+
+}
+
+.menu-heart-custom-full {
+    position: relative;
+    right: 25px;
+    color: transparent;
+}
+.menu-heart-custom-full:hover {
+    opacity: 1;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+}
+
+
 
 /*******************bannerbackgroundimag***********/
 
@@ -174,18 +194,18 @@ span {
     height: 72px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transform: translateX(100%); /* Initialement hors de la vue */
+    transform: translateX(100%); 
     position: absolute;
     right: 0;
     top: 0;
-    transition: transform 0.5s ease; /* Transition pour la propriété transform */
+    transition: transform 0.5s ease; 
 }
 
 .price {
     position: absolute;
     right: 10px;
     top: 30px;
-    transition: transform 0.5s ease; /* Transition pour la propriété transform */
+    transition: transform 0.5s ease; 
     font-weight: bolder;
 }
 
@@ -197,12 +217,12 @@ span {
 }
 
 .box-item:active .price {
-    transform: translateX(-50px); /* Décalage vers la gauche */
+    transform: translateX(-50px); 
 }
 
 .box-item:not(:active) .effect {
-    transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
-    transform: translateX(100%); /* Retour à la position initiale */
+    transition: transform 0.5s ease; 
+    transform: translateX(100%); 
 }
 
 @keyframes green_effect {
@@ -379,6 +399,7 @@ animation: Test 1s ease-in-out forwards;
         width: 80%;
         margin: 0 auto;
         background-color: #f4f4f4;
+
     }
 
     .page-menu {
@@ -404,12 +425,12 @@ animation: Test 1s ease-in-out forwards;
 }
 
 .box-item:active .price {
-    transform: translateX(-60px); /* Décalage vers la gauche */
+    transform: translateX(-60px); 
 }
 
 .box-item:not(:active) .effect {
-    transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
-    transform: translateX(100%); /* Retour à la position initiale */
+    transition: transform 0.5s ease; 
+    transform: translateX(100%); 
 }
 
 @keyframes green_effect {
@@ -466,12 +487,12 @@ animation: Test 1s ease-in-out forwards;
     }
     
     .box-item:hover .price {
-        transform: translateX(-60px); /* Décalage vers la gauche */
+        transform: translateX(-60px); 
     }
     
     .box-item:not(:hover) .effect {
-        transition: transform 0.5s ease; /* Transition pour la propriété transform lorsqu'elle se retire */
-        transform: translateX(100%); /* Retour à la position initiale */
+        transition: transform 0.5s ease; 
+        transform: translateX(100%); 
     }
     
     .box-item:hover .effect {
