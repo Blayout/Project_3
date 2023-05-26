@@ -1,4 +1,4 @@
-/*************general***********/
+/*****************general*****************/
 
 * {
   font-family: "Roboto", sans-serif;
@@ -33,9 +33,6 @@ p {
   --tertiary: #99e2d0;
 }
 
-nav .logo {
-  font-size: 30px;
-}
 /*****************nav*****************/
 
 nav {
@@ -48,6 +45,7 @@ nav {
 
 nav .logo {
   margin: 0;
+  font-size: 30px;
 }
 
 nav i {
@@ -59,7 +57,7 @@ nav i {
   opacity: 1;
 }
 
-/*************taste+heart*************/
+/*****************taste+heart*****************/
 
 .taste-heart {
   display: flex;
@@ -91,6 +89,7 @@ nav i {
   right: 25px;
   color: transparent;
 }
+
 .menu-heart-custom-full:active {
   opacity: 1;
   background-image: linear-gradient(#b472e4, #e47cde);
@@ -98,7 +97,8 @@ nav i {
   border: 0;
 }
 
-/*******************bannerbackgroundimag***********/
+
+/*******************page-menu***********/
 
 .banner {
   height: 500px;
@@ -114,6 +114,7 @@ nav i {
 .page-menu h2 {
   text-align: start;
 }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -136,6 +137,7 @@ span {
   width: 40px;
   margin-right: 292px;
 }
+
 .box-item {
   height: 72px;
   width: 85%;
@@ -196,6 +198,7 @@ span {
 }
 
 /****************animation*************/
+
 .box-item:active .effect {
   transform: translateX(0);
 }
@@ -217,6 +220,7 @@ span {
     transform: translateX(0);
   }
 }
+
 .box-item:active .effect {
   animation-name: "green_effect";
   animation-duration: 0.5s;
@@ -253,27 +257,35 @@ span {
 .page-menu .box-item:nth-child(4) {
   animation: fade-in 1.2s ease-in-out 1.5s forwards;
 }
+
 .page-menu .box-item:nth-child(5) {
   animation: fade-in 1.2s ease-in-out 1.7s forwards;
 }
+
 .page-menu .box-item:nth-child(6) {
   animation: fade-in 1.2s ease-in-out 1.9s forwards;
 }
+
 .page-menu .box-item:nth-child(7) {
   animation: fade-in 1.2s ease-in-out 2.3s forwards;
 }
+
 .page-menu .box-item:nth-child(8) {
   animation: fade-in 1.2s ease-in-out 2.5s forwards;
 }
+
 .page-menu .box-item:nth-child(9) {
   animation: fade-in 1.2s ease-in-out 2.7s forwards;
 }
+
 .page-menu .box-item:nth-child(10) {
   animation: fade-in 1.2s ease-in-out 3.1s forwards;
 }
+
 .page-menu .box-item:nth-child(11) {
   animation: fade-in 1.2s ease-in-out 3.3s forwards;
 }
+
 .page-menu .box-item:nth-child(12) {
   animation: fade-in 1.2s ease-in-out 3.5s forwards;
   -webkit-animation: fade-in 1.2s ease-in-out 3.5s forwards;
@@ -348,6 +360,7 @@ footer .logo {
 .box:hover {
   animation: Test 1s ease-in-out forwards;
 }
+
 
 @media (min-width: 768px) {
   .taste-heart {

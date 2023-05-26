@@ -1,11 +1,7 @@
-/***************general**************/
-
+/* Réinitialisation */
 * {
     padding: 0;
     margin: 0;
-}
-
-* {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,20 +9,15 @@
     font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1, h2 {
     font-size: 24px;
 }
 
-h2 {
-    font-size: 24px;
-}
-
-p {
+p, button {
     font-size: 16px;
 }
 
 button {
-    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.14);
@@ -38,20 +29,14 @@ button {
     --tertiary: #99E2D0;
 }
 
-nav .logo {
-    font-size: 30px;
-}
-/*****************nav*****************/
- 
 nav {
-   
     background-color: white;
     height: 52px;
-} 
+}
 
 nav .logo {
+    font-size: 30px;
     text-align: center;
-    
 }
 
 a {
@@ -59,7 +44,8 @@ a {
     color: black;
 }
 
-/********************mainbanner*******************/
+
+/****************** mainbanner ******************/
 
 .location-header {
     background-color:#EAEAEA;
@@ -85,8 +71,6 @@ a {
     width: 100%;
     text-align: center;
     background-color: #f4f4f4;
-    
-    
 }
 
 .main-banner h1 {
@@ -112,15 +96,14 @@ a {
     font-weight: bolder;
     letter-spacing: 0.6px;
     font-size: 16px;
-  
 }
 
- .button:hover {
+.button:hover {
     filter: brightness(1.1);
     box-shadow: 1px 6px 9px 0px rgba(0,0,0,0.3);
 }
 
-/******************functioning*************/
+/****************** functioning ******************/
 
 .functioning {
     display: flex;
@@ -137,6 +120,7 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
 .functioning h2 {
     align-self: flex-start;
     margin-left: 5%;
@@ -145,6 +129,7 @@ a {
 .functioning p {
     font-weight: bolder;
 }
+
 .item {
     display: flex;
     flex-direction: row;
@@ -164,23 +149,21 @@ a {
     position: absolute;
 }
 
-
 .item i:hover {
     color: var(--primary);
 }
 
+/****************** restaurant ******************/
 
-/******************restaurant*****************/
-
-.container-restaurant{
+.container-restaurant {
     display: flex;
     justify-content: center;
     background-color: #f4f4f4;
     flex-direction: column;
-    margin-top: 50Px;
+    margin-top: 50px;
     align-items: center;
-
 }
+
 .restaurant {
     display: flex;
     flex-direction: column;
@@ -195,8 +178,6 @@ a {
     margin-left: 5%;
 }
 
-
-
 .restaurant-item {
     display: flex;
     flex-direction: column;
@@ -206,8 +187,6 @@ a {
     border-radius: 25px;
     position: relative;
     margin-top: 4%;
-
-
 }
 
 .restaurant .href {
@@ -220,10 +199,7 @@ a {
     padding: 20px;
     line-height: 25px;
     position: relative;
-    
-
 }
-
 
 span {
     position: absolute;
@@ -238,8 +214,6 @@ span {
     top: 21px;
 }
 
-
-
 .restaurant img {
     width: 100%;
     height: 159px;
@@ -251,9 +225,8 @@ span {
 .custom-heart {
     position: absolute;
     font-size: 25px;
-    right:20px;
+    right: 20px;
     bottom: 35px;
-
 }
 
 .custom-heart-full {
@@ -261,11 +234,11 @@ span {
     position: absolute;
     font-size: 25px;
     opacity: 0;
-    right:20px;
+    right: 20px;
     bottom: 35px;
-   
 }
-#like1:target{
+
+#like1:target {
     display: block;
     opacity: 1;
     color: transparent;
@@ -274,46 +247,48 @@ span {
     border: 0;
     position: absolute;
     font-size: 25px;
-    right:20px;
-    bottom: 35px;}
+    right: 20px;
+    bottom: 35px;
+}
 
-    #like2:target{
-        display: block;
-        opacity: 1;
-        color: transparent;
-        background-image: linear-gradient(#b472e4, #e47cde);
-        -webkit-background-clip: text;
-        border: 0;
-        position: absolute;
-        font-size: 25px;
-        right:20px;
-        bottom: 35px;}
-    
-    #like3:target{
-            display: block;
-            opacity: 1;
-            color: transparent;
-            background-image: linear-gradient(#b472e4, #e47cde);
-            -webkit-background-clip: text;
-            border: 0;
-            position: absolute;
-            font-size: 25px;
-            right:20px;
-            bottom: 35px;}
-    
-    #like4:target{
-            display: block;
-            opacity: 1;
-            color: transparent;
-            background-image: linear-gradient(#b472e4, #e47cde);
-            -webkit-background-clip: text;
-            border: 0;
-            position: absolute;
-            font-size: 25px;
-            right:20px;
-            bottom: 35px;}
-    
+#like2:target {
+    display: block;
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    bottom: 35px;
+}
 
+#like3:target {
+    display: block;
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    bottom: 35px;
+}
+
+#like4:target {
+    display: block;
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#b472e4, #e47cde);
+    -webkit-background-clip: text;
+    border: 0;
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    bottom: 35px;
+}
 
 .custom-heart-full {
     opacity: 0;
@@ -321,34 +296,22 @@ span {
     transition-duration: 0.1s;
 }
 
+/********************mediaqueries**************/
 
-/*.custom-heart-full:active {
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
-    border: 0;}
-*/
-
-
-
-
-/***************footer**************/
-
+/* Footer */
 footer {
     background-color: #353535;
     display: flex;
     flex-direction: column;
     color: white;
     padding: 5%;
+    height: 125px;
 }
 
 footer li {
     gap: 20px;
     list-style-type: none;
     line-height: 25px;
-    
-
 }
 
 footer .mail {
@@ -367,43 +330,41 @@ footer .logo {
     margin-bottom: 50px;
 }
 
-/********************mediaqueries**************/
-
+/* Media Queries */
 @media (min-width: 700px) and (max-width: 1224px) {
     
     .functioning {
-        flex-direction: row;   
+        flex-direction: row;
         height: 250px;
-        align-items: center; 
-        width: 100%;  
+        align-items: center;
+        width: 100%;
         justify-content: center;
         gap: 35px;
         margin-top: 80px;
         margin-bottom: 30px;
-
-}
+    }
 
     .item-block {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
     }
+
     .functioning h2 {
         position: absolute;
         left: 2%;
         top: 399px;
-}
-    
+    }
 
     .item {
         width: 39% !important;
     }
+
     .container-restaurant {
         margin-top: 0;
         height: 700px;
-        
     }
-    
+
     .restaurant {
         flex-direction: row;
         width: 100%;
@@ -415,40 +376,35 @@ footer .logo {
         margin-top: 60px;
         margin-bottom: 50px;
     }
-    
+
     .restaurant h2 {
         top: -27px;
         left: 10%;
         margin-left: 0;
         position: absolute;
     }
-    
-    
+
     .restaurant-item {
         width: 40%;
         margin: 2% 3%;
-       
     }
-    
+
     .restaurant .href {
         width: 100%;
     }
-    
+
     span {
         width: 80px;
         padding: 10px;
     }
-    
+
     .custom-heart {
         margin-left: 506px;
     }
-    
+
     .custom-heart-full {
         margin-left: 506px;
     }
-
-
-
 
     .functioning {
         flex-direction: row;
@@ -457,131 +413,115 @@ footer .logo {
         justify-content: center;
         flex-wrap: wrap;
     }
+
     .functioning h2 {
         position: absolute;
     }
-
 }
 
 @media (min-width: 1224px) {
-
-
-/****************functioning**********/
-
-
-
-.functioning {
-        flex-direction: column;   
+    /* Functioning */
+    
+    .functioning {
+        flex-direction: column;
         height: 250px;
-        align-items: center; 
-        width: 100%;  
+        align-items: center;
+        width: 100%;
         justify-content: center;
         gap: 35px;
+    }
 
+    .functioning h2 {
+        margin: 0;
+        margin-left: 9%;
+    }
+
+    .item-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .item {
+        width: 25%;
+    }
+
+    /* Restaurant */
+    .container-restaurant {
+        margin-top: 0;
+        height: 700px;
+    }
+
+    .restaurant {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .restaurant h2 {
+        top: -40px;
+        left: 9%;
+        margin-left: 0;
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    .restaurant-item {
+        width: 40%;
+        margin: 2% 3%;
+    }
+
+    .restaurant .href {
+        width: 100%;
+    }
+
+    span {
+        width: 80px;
+        padding: 10px;
+    }
+
+    .custom-heart {
+        margin-left: 506px;
+    }
+
+    .custom-heart-full {
+        margin-left: 506px;
+    }
+
+    /* Footer */
+    footer {
+        height: 125px;
+        padding: 0;
+    }
+
+    .text-footer {
+        flex-direction: row;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        height: 100%;
+        padding: 3%;
+    }
+
+    footer ul {
+        flex-direction: row;
+        display: flex;
+        gap: 29px;
+    }
+
+    footer .logo {
+        margin: 0;
+        order: 5;
+        margin-left: 30px;
+    }
 }
-
-.functioning h2 {
-    margin: 0;
-    margin-left: 9%;
-}
-.item-block {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    gap: 40px;
-
-} 
-
-.item {
-    width: 25%;
-}
-
-
-/*************restaurant*************/
-
-.container-restaurant {
-    margin-top: 0;
-    height: 700px;
-    
-}
-
-.restaurant {
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    position: relative;
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
-
-.restaurant h2 {
-    top: -40px;
-    left: 9%;
-    margin-left: 0;
-    position: absolute;
-    margin-top: 20px;
-}
-
-
-.restaurant-item {
-    width: 40%;
-    margin: 2% 3%;
-   
-}
-
-.restaurant .href {
-    width: 100%;
-}
-
-span {
-    width: 80px;
-    padding: 10px;
-}
-
-.custom-heart {
-    margin-left: 506px;
-}
-
-.custom-heart-full {
-    margin-left: 506px;
-}
-
-/***************footer**************/
-
-footer {
-    height: 125px;
-    padding: 0;
-}
-.text-footer {
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    height: 100%;
-    padding: 3%;
-
-}
-
-footer ul {
-    flex-direction: row;
-    display: flex;
-    gap: 29px;
-
-}
-
-footer .logo {
-    margin: 0;
-    order: 5;
-    margin-left: 30px;
-}
-
-}
-
-@import url(assets/images/menu.css);
 
 
