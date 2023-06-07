@@ -68,7 +68,6 @@ nav i {
   margin-top: -57px !important;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  position: relative;
   width: auto;
 }
 
@@ -82,13 +81,20 @@ nav i {
 
 .menu-heart-custom-empty {
   position: relative;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 
 .menu-heart-custom-full {
   position: relative;
-  right: 25px;
   color: transparent;
+  margin-left: -25px;
+  right: 0;
+  top: 0;
 }
+
+
 
 .menu-heart-custom-full:active {
   opacity: 1;
@@ -96,7 +102,6 @@ nav i {
   -webkit-background-clip: text;
   border: 0;
 }
-
 
 /*******************page-menu***********/
 
@@ -113,6 +118,8 @@ nav i {
 
 .page-menu h2 {
   text-align: start;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 .box {
@@ -128,10 +135,10 @@ nav i {
   justify-content: flex-start;
   line-height: 30px;
   align-self: flex-start;
-  margin-left: 7%;
+  margin-left: 8%;
 }
 
-span {
+.page-menu span {
   background-color: #99e2d0;
   height: 3px;
   width: 40px;
@@ -236,6 +243,11 @@ span {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.box-item:active .box-item {
+  animation-name: "fade-in";
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
 }
 
 .page-menu .box-item {
@@ -360,7 +372,6 @@ footer .logo {
 .box:hover {
   animation: Test 1s ease-in-out forwards;
 }
-
 
 @media (min-width: 768px) {
   .taste-heart {
@@ -490,6 +501,7 @@ footer .logo {
   }
 
   .box-info h3 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
+
