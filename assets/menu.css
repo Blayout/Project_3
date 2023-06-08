@@ -106,7 +106,7 @@ nav i {
 /*******************page-menu***********/
 
 .banner {
-  height: 500px;
+  height: 300px;
   width: auto;
   background-size: cover;
   background-position: center;
@@ -229,7 +229,7 @@ nav i {
 }
 
 .box-item:active .effect {
-  animation-name: "green_effect";
+  animation-name: green_effect;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -245,7 +245,7 @@ nav i {
   }
 }
 .box-item:active .box-item {
-  animation-name: "fade-in";
+  animation-name: fade-in;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
 }
@@ -340,7 +340,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 5%;
+  padding: 17px;
 }
 
 footer li {
@@ -385,18 +385,14 @@ footer .logo {
     margin: 0 auto;
   }
 
-  .banner-palettedugout {
+  .banner {
+    height: 500px;
+  }
+
+  .banner {
     margin-bottom: -41px;
   }
-  .banner-alafrancaise {
-    margin-bottom: -41px;
-  }
-  .banner-lanoteenchante {
-    margin-bottom: -41px;
-  }
-  .banner-delicedessens {
-    margin-bottom: -41px;
-  }
+  
 
   .taste-heart {
     width: 80%;
@@ -443,7 +439,7 @@ footer .logo {
     }
   }
   .box-item:active .effect {
-    animation-name: "green_effect";
+    animation-name: green_effect;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -495,7 +491,7 @@ footer .logo {
   }
 
   .box-item:hover .effect {
-    animation-name: "green_effect";
+    animation-name: green_effect;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -505,10 +501,10 @@ footer .logo {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1150px) {
   
   .max-width-menu {
-    max-width: 1440px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 
