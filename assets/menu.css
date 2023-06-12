@@ -202,22 +202,10 @@ nav i {
   top: 30px;
   transition: transform 0.5s ease;
   font-weight: bolder;
+  font-size: 14px;
 }
 
 /****************animation*************/
-
-.box-item:active .effect {
-  transform: translateX(0);
-}
-
-.box-item:active .price {
-  transform: translateX(-50px);
-}
-
-.box-item:not(:active) .effect {
-  transition: transform 0.5s ease;
-  transform: translateX(100%);
-}
 
 @keyframes green_effect {
   0% {
@@ -228,10 +216,29 @@ nav i {
   }
 }
 
+
 .box-item:active .effect {
   animation-name: green_effect;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+.box-item:active .price {
+  transform: translateX(-50px);
+  animation-duration: 0.3s;; /* Décalage vers la gauche */
+}
+
+@keyframes reset_effect {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.box-item .effect {
+  transition: transform 0.5s ease;
+  animation: reset_effect 0.5s ease forwards;
 }
 
 @keyframes fade-in {
@@ -244,15 +251,13 @@ nav i {
     transform: translateY(0);
   }
 }
-.box-item:active .box-item {
-  animation-name: fade-in;
-  animation-duration: 1.2s;
-  animation-fill-mode: forwards;
-}
+
 
 .page-menu .box-item {
   opacity: 0;
 }
+
+
 
 .page-menu .box-item:nth-child(1) {
   animation: fade-in 1.2s ease-in-out 0.5s forwards;
@@ -302,6 +307,7 @@ nav i {
   animation: fade-in 1.2s ease-in-out 3.5s forwards;
   -webkit-animation: fade-in 1.2s ease-in-out 3.5s forwards;
 }
+
 
 .button {
   width: 186px;
@@ -361,17 +367,7 @@ footer .logo {
   margin-bottom: 50px;
 }
 
-.test {
-  width: 30px;
-  margin: -10px;
-  background-color: #50e2ac;
-  height: 128%;
-  border-radius: 0px 10px 10px 1px;
-}
 
-.box:hover {
-  animation: Test 1s ease-in-out forwards;
-}
 
 @media (min-width: 768px) {
   .taste-heart {
@@ -407,6 +403,10 @@ footer .logo {
   .page-menu .box {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .price {
+    font-size: 16px;
   }
 
   .box-info h3 {
