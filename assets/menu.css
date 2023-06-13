@@ -225,7 +225,7 @@ nav i {
 
 .box-item:active .price {
   transform: translateX(-50px);
-  animation-duration: 0.3s;; /* Décalage vers la gauche */
+  animation-duration: 0.3s;; 
 }
 
 @keyframes reset_effect {
