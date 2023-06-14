@@ -92,6 +92,7 @@ nav i {
   margin-left: -25px;
   right: 0;
   top: 0;
+  
 }
 
 
@@ -101,6 +102,9 @@ nav i {
   background-image: linear-gradient(#b472e4, #e47cde);
   -webkit-background-clip: text;
   border: 0;
+  animation-duration: 0.8s;
+  transition-property: all;
+
 }
 
 /*******************page-menu***********/
@@ -167,10 +171,18 @@ nav i {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .box-info p {
   font-size: 0.85em;
+}
+
+.point-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
 }
 
 .effect .fa-circle-check {
@@ -205,6 +217,7 @@ nav i {
   font-size: 14px;
 }
 
+
 /****************animation*************/
 
 @keyframes green_effect {
@@ -223,9 +236,14 @@ nav i {
   animation-fill-mode: forwards;
 }
 
+
+.box-item:active p {
+  width: 83%;
+}
 .box-item:active .price {
   transform: translateX(-50px);
-  animation-duration: 0.3s;; 
+  animation-duration: 0.3s; 
+  width: 5%;
 }
 
 @keyframes reset_effect {
@@ -411,6 +429,13 @@ footer .logo {
 
   .box-info h3 {
     font-size: 1em;
+  }
+  
+  .point-3 {
+    overflow: initial;
+    text-overflow: initial;
+  
+    
   }
 
   .effect {
