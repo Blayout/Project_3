@@ -231,70 +231,24 @@ a {
 }
 
 .custom-heart-full {
-    display: none;
     position: absolute;
     font-size: 25px;
     opacity: 0;
     right: 20px;
     bottom: 35px;
+    color: transparent;
+
 }
 
-#like1:target {
-    display: block;
+
+.custom-heart-full:active {
     opacity: 1;
-    color: transparent;
     background-image: linear-gradient(#b472e4, #e47cde);
     -webkit-background-clip: text;
     border: 0;
-    position: absolute;
-    font-size: 25px;
-    right: 20px;
-    bottom: 35px;
-}
-
-#like2:target {
-    display: block;
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
-    border: 0;
-    position: absolute;
-    font-size: 25px;
-    right: 20px;
-    bottom: 35px;
-}
-
-#like3:target {
-    display: block;
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
-    border: 0;
-    position: absolute;
-    font-size: 25px;
-    right: 20px;
-    bottom: 35px;
-}
-
-#like4:target {
-    display: block;
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#b472e4, #e47cde);
-    -webkit-background-clip: text;
-    border: 0;
-    position: absolute;
-    font-size: 25px;
-    right: 20px;
-    bottom: 35px;
-}
-
-.custom-heart-full {
-    opacity: 0;
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.4s;
+
 }
 
 
