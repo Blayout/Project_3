@@ -44,9 +44,64 @@ a {
     text-decoration: none;
     color: black;
 }
+/**********************loader********************/
+.loader {
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    animation: fade-out 4s forwards;
+    background-color: #f4f4f4;
+    z-index: 10000;
+     
+  }
+  
+  .loader-circle {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #6f478c;
+    border-top-color: #e47cde;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  .loader-text {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fade-up 2s forwards;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);} 
 
+  }
+  
+  @keyframes fade-up {
+    0% { opacity: 0; transform: translateY(70px); }
+    100% { opacity: 1; transform: translateY(0); }
+
+  }
+  
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    90%{opacity : 1;}
+    99%{width: 100%;}
+    100% { opacity: 0; display: none; width: 0px;}
+  }
 
 /****************** mainbanner ******************/
+
 
 .location-header {
     background-color:#EAEAEA;
