@@ -247,6 +247,8 @@ a {
 
 .restaurant .href {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .text-item {
@@ -297,7 +299,7 @@ a {
 }
 
 
-.custom-heart-full:active {
+.custom-heart-full:hover {
     opacity: 1;
     background-image: linear-gradient(#b472e4, #e47cde);
     -webkit-background-clip: text;
@@ -393,6 +395,7 @@ footer a {
         position: relative;
         margin-top: 60px;
         margin-bottom: 50px;
+        gap: 21px 60px;
     }
 
     .restaurant h2 {
@@ -403,12 +406,13 @@ footer a {
     }
 
     .restaurant-item {
-        width: 40%;
-        margin: 2% 3%;
+        width: 100%;
+
     }
 
     .restaurant .href {
-        width: 100%;
+        width: 40%;
+        
     }
 
     .new {
@@ -482,10 +486,11 @@ footer a {
         position: relative;
         margin-top: 60px;
         margin-bottom: 50px;
+        gap: 21px 60px;
     }
 
     .restaurant h2 {
-        top: -40px;
+        top: -60px;
         left: 9%;
         margin-left: 0;
         position: absolute;
@@ -493,12 +498,12 @@ footer a {
     }
 
     .restaurant-item {
-        width: 40%;
+        width: 100%;
         margin: 2% 3%;
     }
 
     .restaurant .href {
-        width: 100%;
+        width: 40%;
     }
 
     .new {
