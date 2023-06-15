@@ -257,6 +257,7 @@ a {
     position: relative;
 }
 
+
 .new {
     position: absolute;
     width: auto;
@@ -304,6 +305,8 @@ a {
     transition-property: all;
     transition-duration: 0.4s;
 }
+
+ 
 
 
 

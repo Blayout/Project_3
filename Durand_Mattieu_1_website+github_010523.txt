@@ -1,5 +1,5 @@
 URL OH MY FOOD ONLINE
-https://blayout.github.io/Durand_MattieuOhMyFood/
+https://blayout.github.io/Project_3/
 
 URL GITHUB : 
-https://github.com/Blayout
+https://github.com/Blayout/Project_3
